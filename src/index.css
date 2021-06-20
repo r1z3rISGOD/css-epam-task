@@ -1,0 +1,329 @@
+* {
+    padding: 0 0;
+    margin: 0 auto;
+    text-align: justify;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    font-size: 16px;
+    animation: opacity 3s;
+}
+
+body {
+    min-width: 500px;
+    max-width: 1500px;
+    background-color: #fefefe;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.header h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.header h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.biography {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 200px;
+}
+
+.biography-elizabet {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 50%;
+    min-width: 500px;
+}
+
+.biography-elizabet img {
+    width: 70%;
+    min-width: 500px;
+    margin-bottom: 50px;
+}
+
+.biography-elizabet div {
+    width: 60%;
+    min-width: 480px;
+    animation: opacity 10s;
+}
+
+.biography-eric {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+    min-width: 500px;
+}
+
+.biography-eric div {
+    width: 60%;
+    min-width: 480px;
+    animation: opacity 10s;
+}
+
+.biography-eric img {
+    width: 70%;
+    min-width: 500px;
+    margin-bottom: 60px;
+}
+
+.summary {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 90%;
+}
+
+.summary h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+
+.summary__text div {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 0;
+    max-width: 600px;
+    line-height: 25px;
+    min-width: 500px;
+}
+
+
+.summary__text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+
+.summary__text div ul {
+    list-style: none;
+}
+
+
+.inside {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 90%;
+    min-width: 500px;
+}
+
+.inside h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+
+.inside__list div {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0 0;
+    max-width: 600px;
+    line-height: 25px;
+    min-width: 500px;
+}
+
+
+.inside__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.inside__list div ul {
+    list-style: none;
+}
+
+.inside__text {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inside__text div {
+    max-width: 750px;
+    margin: 0 5px;
+    min-width: 480px;
+}
+
+@media (min-width: 1000px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    .header h1 {
+        margin-left: 100px;
+    }
+
+    .header h2 {
+        margin-left: 100px;
+    }
+
+    .summary h1 {
+        padding-right: 100px;
+    }
+
+    .summary__text {
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    }
+
+    .inside__list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    }
+
+    .inside h1 {
+        padding-right: 100px;
+    }
+
+    .inside__text {
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    }
+}
+
+@supports (display: grid) {
+    .biography {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100%);
+        margin-bottom: 200px;
+    }
+
+    .biography-elizabet {
+        display: grid;
+        width: 50%;
+        min-width: 500px;
+    }
+    .biography-eric {
+        display: grid;
+        width: 50%;
+        margin-top: 30px;
+        min-width: 500px;
+    }
+
+    .biography-eric img {
+        width: 70%;
+        min-width: 500px;
+        margin-bottom: 40px;
+    }
+
+    .summary {
+        display: grid;
+        width: 100%;
+    }
+    .summary__text div {
+        display: grid;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-columns: 5% 85% 5%;
+        width: 100%;
+        margin: 0 0;
+        max-width: 600px;
+        line-height: 25px;
+        min-width: 500px;
+    }
+
+    .summary__text {
+        display: grid;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    .inside {
+        display: grid;
+        width: 90%;
+        min-width: 500px;
+    }
+    .inside__list div {
+        display: grid;
+        grid-template-columns: 93% 8%;
+        width: 100%;
+        margin: 0 0;
+        max-width: 600px;
+        line-height: 25px;
+        min-width: 500px;
+    }
+
+    .inside__list {
+        display: grid;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    @media (min-width: 1000px) {
+        .biography {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .summary__text div {
+            min-width: 600px;
+        }
+
+        .summary {
+            width: 90%;
+        }
+
+        .summary__text {
+            -ms-flex-pack: end;
+                justify-content: end;
+        }
+
+        .inside__list {
+            -ms-flex-pack: end;
+                justify-content: end;
+        }
+
+        .inside__list div {
+            min-width: 650px;
+        }
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
