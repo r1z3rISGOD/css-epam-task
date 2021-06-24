@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=0.7, maximum-scale=6.0, minimum-scale=0.7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./src/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,97 +12,97 @@
 </head>
 <body>
 <header class="header">
-    <h1>авторы</h1>
-    <h2>Об авторах</h2>
+    <h1 class="header__text-1">авторы</h1>
+    <h2 class="header__text-2">Об авторах</h2>
 </header>
 <main class="biography">
     <section class="biography-elizabet">
-        <img src="./src/Elisabeth.gif" alt="Elisabet's Photography">
-        <div><b>Элизабет</b> - автор и разработчик программного обеспечения. Она с самого детства имеет дело с Интернетом.
+        <img class="biography-elizabet__img" src="./src/Elisabeth.gif" alt="Elisabet's Photography">
+        <div class="biography-elizabet__text"><b>Элизабет</b> - автор и разработчик программного обеспечения. Она с самого детства имеет дело с Интернетом.
             Элизабет - соучредитель The Ada Project (TAP), сайта для женщин, который посвящен работе с компьютером и
             ныне принят ACM (Ассоциацией по вычислительной технике). Кроме того, Элизабет возглавляет работы по
             исследованию и и развитию цифровых носителей.
         </div>
     </section>
     <section class="biography-eric">
-        <img src="./src/Eric.gif" alt="Eric's Photography">
-        <div><b>Эрик</b> - исследователь в области компьютеров, страстно увлекающийся работой с информацией медиатипа и
+        <img class="biography-eric__img" src="./src/Eric.gif" alt="Eric's Photography">
+        <div class="biography-eric__text"><b>Эрик</b> - исследователь в области компьютеров, страстно увлекающийся работой с информацией медиатипа и
             архитектурой систем программного обеспечения. В течении последних четырех лет он занимался реализацией
             своей
             мечты, управляя разработкой широкополосного Интернета и беспроводного доступа в Disney.
         </div>
     </section>
 </main>
-<section class="summary">
-    <h1>Содержание (сводка)</h1>
-    <section class="summary__text">
-        <div>
-            <ul>
-                <li><br></li>
-                <li>1</li>
-                <li>2</li>
-                <li><br></li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-                <li>12</li>
-                <li><br></li>
-                <li>13</li>
-                <li><br></li>
-                <li>14</li>
+<section class="summary-block">
+    <h1 class="summary-block__head-text">Содержание (сводка)</h1>
+    <section class="summary-block__main-text">
+        <div class="summary-block__main-text__container">
+            <ul class="summary-block__main-text__container__list">
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">1</li>
+                <li class="summary-block__main-text__container__list__list-el">2</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">3</li>
+                <li class="summary-block__main-text__container__list__list-el">4</li>
+                <li class="summary-block__main-text__container__list__list-el">5</li>
+                <li class="summary-block__main-text__container__list__list-el">6</li>
+                <li class="summary-block__main-text__container__list__list-el">7</li>
+                <li class="summary-block__main-text__container__list__list-el">8</li>
+                <li class="summary-block__main-text__container__list__list-el">9</li>
+                <li class="summary-block__main-text__container__list__list-el">10</li>
+                <li class="summary-block__main-text__container__list__list-el">11</li>
+                <li class="summary-block__main-text__container__list__list-el">12</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">13</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">14</li>
             </ul>
-            <ul>
-                <li>Введение</li>
-                <li>Язык Сети: <i>знакомство с HTML</i></li>
-                <li>Знакомство с гипертекстом:<br> <i>идем дальше - используем гипертекст</i></li>
-                <li>Конструирование веб-страниц: <i>строительные блоки</i></li>
-                <li>Путешествие в Webville: <i>соединение</i></li>
-                <li>Знакомство с медиа: <i>добавление изображений на страницы</i></li>
-                <li>Серьезный HTML: <i>соответствие стандартам</i></li>
-                <li>Добавление X к HTML: <i>переходим к XHTML</i></li>
-                <li>Начнем работать над дизайном: <i>приступаем к работе с CSS</i></li>
-                <li>Увеличиваем словарный запас: <i>меняем шрифты и цвета</i></li>
-                <li>Познакомимся с элементами поближе: <i>блочная модель</i></li>
-                <li>Современная веб-конструкция: <i>элементы div и span</i></li>
-                <li>Расставим элементы по местам:<br><i>разметка и позиционирование</i></li>
-                <li>Представление в табличной форме:<br><i>таблицы и большие списки</i></li>
-                <li>Переход на интерактивный режим: <i>XHTML-формы</i></li>
+            <ul class="summary-block__main-text__container__list">
+                <li class="summary-block__main-text__container__list__list-el">Введение</li>
+                <li class="summary-block__main-text__container__list__list-el">Язык Сети: <i>знакомство с HTML</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Знакомство с гипертекстом:<br> <i>идем дальше - используем гипертекст</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Конструирование веб-страниц: <i>строительные блоки</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Путешествие в Webville: <i>соединение</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Знакомство с медиа: <i>добавление изображений на страницы</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Серьезный HTML: <i>соответствие стандартам</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Добавление X к HTML: <i>переходим к XHTML</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Начнем работать над дизайном: <i>приступаем к работе с CSS</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Увеличиваем словарный запас: <i>меняем шрифты и цвета</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Познакомимся с элементами поближе: <i>блочная модель</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Современная веб-конструкция: <i>элементы div и span</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Расставим элементы по местам:<br><i>разметка и позиционирование</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Представление в табличной форме:<br><i>таблицы и большие списки</i></li>
+                <li class="summary-block__main-text__container__list__list-el">Переход на интерактивный режим: <i>XHTML-формы</i></li>
             </ul>
-            <ul>
-                <li>23</li>
-                <li>35</li>
-                <li>75</li>
-                <li><br></li>
-                <li>107</li>
-                <li>151</li>
-                <li>189</li>
-                <li>245</li>
-                <li>285</li>
-                <li>303</li>
-                <li>357</li>
-                <li>399</li>
-                <li>441</li>
-                <li>499</li>
-                <li><br></li>
-                <li>557</li>
-                <li><br></li>
-                <li>597</li>
+            <ul class="summary-block__main-text__container__list">
+                <li class="summary-block__main-text__container__list__list-el">23</li>
+                <li class="summary-block__main-text__container__list__list-el">35</li>
+                <li class="summary-block__main-text__container__list__list-el">75</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">107</li>
+                <li class="summary-block__main-text__container__list__list-el">151</li>
+                <li class="summary-block__main-text__container__list__list-el">189</li>
+                <li class="summary-block__main-text__container__list__list-el">245</li>
+                <li class="summary-block__main-text__container__list__list-el">285</li>
+                <li class="summary-block__main-text__container__list__list-el">303</li>
+                <li class="summary-block__main-text__container__list__list-el">357</li>
+                <li class="summary-block__main-text__container__list__list-el">399</li>
+                <li class="summary-block__main-text__container__list__list-el">441</li>
+                <li class="summary-block__main-text__container__list__list-el">499</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">557</li>
+                <li class="summary-block__main-text__container__list__list-el"><br></li>
+                <li class="summary-block__main-text__container__list__list-el">597</li>
             </ul>
         </div>
     </section>
 </section>
-<section class="inside">
-    <h1>Содержание (настоящее)</h1>
-    <section class="inside__text">
-        <div>
-        <h1>Введение</h1>
-        <div><b>Поведение вашего мозга при изучении HTML и CSS.</b> Когда вы пытаетесь что-либо выучить, ваш мозг неустанно
+<section class="inside-block">
+    <h1 class="inside-block__head-text">Содержание (настоящее)</h1>
+    <section class="inside-block__main-text">
+        <div class="inside-block__main-text__container">
+        <h1 class="inside-block__main-text__head-text">Введение</h1>
+        <div class="inside-block__main-text__body-text"><b>Поведение вашего мозга при изучении HTML и CSS.</b> Когда вы пытаетесь что-либо выучить, ваш мозг неустанно
             следит за тем, чтобы процесс изучения не остановился. Он думает: “Лучше оставить место для более важной
             информации, чтобы, например, знать, встречи с какими дикими животными следует избегать. Или знать, что
             катание на сноуборде без специального снаряжения - не самая удачная идея”. Как же убедить свой мозг в том,
@@ -110,27 +110,27 @@
         </div>
         </div>
     </section>
-    <section class="inside__list">
-        <div>
-            <ul>
-                <li>Для кого написана эта книга?</li>
-                <li>Кому не стоит читать эту книгу</li>
-                <li>Мы знаем, что вы думаете</li>
-                <li>Мы также знаем, о чем думает ваш мозг</li>
-                <li>Метапознание: учимся учится</li>
-                <li>Вот что МЫ делали</li>
-                <li>Вот что можете сделать ВЫ, чтобы заставить свой мозг работать</li>
-                <li>Примите к сведенью</li>
+    <section class="inside-block__sec">
+        <div class="inside-block__sec__container">
+            <ul class="inside-block__sec__container__list">
+                <li class="inside-block__sec__container__list__list-el">Для кого написана эта книга?</li>
+                <li class="inside-block__sec__container__list__list-el">Кому не стоит читать эту книгу</li>
+                <li class="inside-block__sec__container__list__list-el">Мы знаем, что вы думаете</li>
+                <li class="inside-block__sec__container__list__list-el">Мы также знаем, о чем думает ваш мозг</li>
+                <li class="inside-block__sec__container__list__list-el">Метапознание: учимся учится</li>
+                <li class="inside-block__sec__container__list__list-el">Вот что МЫ делали</li>
+                <li class="inside-block__sec__container__list__list-el">Вот что можете сделать ВЫ, чтобы заставить свой мозг работать</li>
+                <li class="inside-block__sec__container__list__list-el">Примите к сведенью</li>
             </ul>
-            <ul>
-                <li>24</li>
-                <li>24</li>
-                <li>25</li>
-                <li>25</li>
-                <li>27</li>
-                <li>28</li>
-                <li>29</li>
-                <li>30</li>
+            <ul class="inside-block__sec__container__list inside-block__sec__container__list-right">
+                <li class="inside-block__sec__container__list__list-elinside-block__list__container__list__list-el">24</li>
+                <li class="inside-block__sec__container__list__list-elinside-block__list__container__list__list-el">24</li>
+                <li class="inside-block__sec__container__list__list-el">25</li>
+                <li class="inside-block__sec__container__list__list-el">25</li>
+                <li class="inside-block__sec__container__list__list-el">27</li>
+                <li class="inside-block__sec__container__list__list-el">28</li>
+                <li class="inside-block__sec__container__list__list-el">29</li>
+                <li class="inside-block__sec__container__list__list-el">30</li>
             </ul>
         </div>
     </section>
