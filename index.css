@@ -244,7 +244,7 @@ body {
         margin: 0;
     }
 
-    .list-content * {
+    .list-content__item, .list-content__item--bold {
         font-size: calc(0.3rem + 0.9vw);
         white-space: nowrap;
     }
@@ -270,12 +270,6 @@ body {
         max-width: 600px;
         min-width: 350px;
         justify-content: space-between;
-    }
-
-    .second-container * {
-        font-size: calc(0.3rem + 1vw);
-        white-space: nowrap;
-        padding: 0;
     }
 
     .description-block {
