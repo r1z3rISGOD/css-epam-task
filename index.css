@@ -44,24 +44,24 @@ body {
     margin-bottom: 200px;
 }
 
-.biography-elizabet {
+.elizabet {
     animation: transLeft 3s;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.biography-elizabet__img {
+.elizabet__img {
     width: 100%;
     margin-bottom: 50px;
 }
 
-.biography-elizabet__text {
+.elizabet__text {
     width: 100%;
     animation: opacity 10s;
 }
 
-.biography-eric {
+.eric {
     animation: transRight 3s;
     display: flex;
     flex-direction: column;
@@ -69,12 +69,12 @@ body {
     margin-top: 30px;
 }
 
-.biography-eric__text {
+.eric__text {
     width: 100%;
     animation: opacity 10s;
 }
 
-.biography-eric__img {
+.eric__img {
     width: 100%;
     margin-bottom: 60px;
 }
@@ -84,14 +84,14 @@ body {
     flex-direction: column;
 }
 
-.summary-block__head-text {
+.summary-block__heading {
     font-size: calc(1.5rem + 1vw);
     margin-bottom: 30px;
     font-family: 'Amatic SC', sans-serif;
 }
 
 
-.summary-block__main-text__container {
+.list-container {
     display: flex;
     width: 100%;
     margin: 0 0;
@@ -100,20 +100,20 @@ body {
 }
 
 
-.summary-block__main-text {
+.content-block {
     margin-bottom: 100px;
     width: 100%;
     padding: 0;
 }
 
 
-.summary-block__main-text__container__list {
+.list-content {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.summary-block__main-text__container__list * {
+.list-content__item, .list-content__item--bold {
     font-size: calc(0.3rem + 0.9vw);
     white-space: nowrap;
 }
@@ -125,45 +125,39 @@ body {
     padding: 0;
 }
 
-.inside-block__head-text {
+.inside-block__heading {
     font-size: calc(1.5rem + 1vw);
     margin-bottom: 30px;
     font-family: 'Amatic SC', sans-serif;
 }
 
 
-.inside-block__sec__container {
+.second-container {
     display: flex;
     width: 100%;
     margin: 0 0;
     justify-content: space-between;
 }
 
-.inside-block__sec__container * {
-    font-size: calc(0.4rem + 1vw);
-    white-space: nowrap;
-    padding: 0;
-}
-
-.inside-block__sec {
+.description-block {
     margin-bottom: 50px;
     width: 100%;
 }
 
 
-.inside-block__sec__container__list {
+.list-content {
     list-style: none;
     margin: 0;
 }
 
-.inside-block__main-text {
+.introduction-block {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.inside-block__main-text__body-text {
+.text-container__text {
     padding: 0;
 }
 
@@ -179,24 +173,24 @@ body {
         margin-bottom: 200px;
     }
 
-    .biography-elizabet {
+    .elizabet {
         display: flex;
         flex-direction: column;
         width: 40%;
         height: 500px;
     }
 
-    .biography-elizabet__img {
+    .elizabet__img {
         width: 100%;
         margin-bottom: 50px;
     }
 
-    .biography-elizabet__text {
+    .elizabet__text {
         width: 100%;
         animation: opacity 10s;
     }
 
-    .biography-eric {
+    .eric {
         display: flex;
         flex-direction: column;
         width: 40%;
@@ -204,12 +198,12 @@ body {
         height: 500px;
     }
 
-    .biography-eric__text {
+    .eric__text {
         width: 100%;
         animation: opacity 10s;
     }
 
-    .biography-eric__img {
+    .eric__img {
         width: 100%;
         margin-bottom: 60px;
     }
@@ -219,13 +213,13 @@ body {
         flex-direction: column;
     }
 
-    .summary-block__head-text {
+    .summary-block__heading {
         margin-bottom: 30px;
         font-family: 'Amatic SC', sans-serif;
     }
 
 
-    .summary-block__main-text__container {
+    .list-container {
         display: flex;
         width: 100%;
         margin: 0 0;
@@ -234,7 +228,7 @@ body {
     }
 
 
-    .summary-block__main-text {
+    .content-block {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 100px;
@@ -245,12 +239,12 @@ body {
     }
 
 
-    .summary-block__main-text__container__list {
+    .list-content {
         list-style: none;
         margin: 0;
     }
 
-    .summary-block__main-text__container__list * {
+    .list-content * {
         font-size: calc(0.3rem + 0.9vw);
         white-space: nowrap;
     }
@@ -262,14 +256,14 @@ body {
         min-width: 350px;
     }
 
-    .inside-block__head-text {
+    .inside-block__heading {
         font-size: 40px;
         margin-bottom: 30px;
         font-family: 'Amatic SC', sans-serif;
     }
 
 
-    .inside-block__sec__container {
+    .second-container {
         display: flex;
         width: 100%;
         margin: 0 0;
@@ -278,13 +272,13 @@ body {
         justify-content: space-between;
     }
 
-    .inside-block__sec__container * {
+    .second-container * {
         font-size: calc(0.3rem + 1vw);
         white-space: nowrap;
         padding: 0;
     }
 
-    .inside-block__sec {
+    .description-block {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 50px;
@@ -294,25 +288,25 @@ body {
     }
 
 
-    .inside-block__sec__container__list {
+    .list-content {
         list-style: none;
         margin: 0;
     }
 
-    .inside-block__main-text {
+    .introduction-block {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
     }
 
-    .inside-block__main-text__container {
+    .text-container {
         max-width: 750px;
         min-width: 350px;
         margin-right: 40px;
     }
 
-    .inside-block__main-text__body-text {
+    .text-container__text {
         padding: 0;
     }
 }
@@ -331,13 +325,13 @@ body {
         margin-bottom: 200px;
     }
 
-    .biography-elizabet {
+    .elizabet {
         display: grid;
         width: 100%;
         animation: transRight 3s;
     }
 
-    .biography-eric {
+    .eric {
         display: grid;
         width: 100%;
         margin-top: 30px;
@@ -349,7 +343,7 @@ body {
         width: 100%;
     }
 
-    .summary-block__main-text__container {
+    .list-container {
         display: grid;
         grid-template-columns: 5% 90% 5%;
         width: 100%;
@@ -364,23 +358,23 @@ body {
         padding: 0;
     }
 
-    .inside-block__sec__container {
+    .second-container {
         display: grid;
         width: 100%;
         margin: 0 0;
         grid-template-columns: 92% 8%;
     }
 
-    .inside-block__sec__container__list-right {
+    .list-content__item--right {
         justify-self: end;
     }
 
-    .inside-block__sec {
+    .description-block {
         margin-bottom: 50px;
         width: 100%;
     }
 
-    .inside-block__main-text {
+    .introduction-block {
         width: 100%;
         display: grid;
         justify-content: center;
@@ -398,13 +392,13 @@ body {
             margin-bottom: 200px;
         }
 
-        .biography-elizabet {
+        .elizabet {
             display: grid;
             width: 80%;
             animation: transLeft 3s;
         }
 
-        .biography-eric {
+        .eric {
             display: grid;
             width: 80%;
             margin-top: 30px;
@@ -415,7 +409,7 @@ body {
             display: grid;
         }
 
-        .summary-block__main-text__container {
+        .list-container {
             display: grid;
             width: 100%;
             margin: 0 0;
@@ -424,7 +418,7 @@ body {
         }
 
 
-        .summary-block__main-text {
+        .content-block {
             display: flex;
             justify-content: flex-end;
             margin-bottom: 100px;
@@ -440,7 +434,7 @@ body {
             min-width: 350px;
         }
 
-        .inside-block__sec__container {
+        .second-container {
             display: grid;
             width: 100%;
             margin: 0 0;
@@ -450,7 +444,7 @@ body {
             grid-template-columns: 92% 8%;
         }
 
-        .inside-block__sec {
+        .description-block {
             display: grid;
             justify-content: end;
             margin-bottom: 50px;
@@ -460,14 +454,14 @@ body {
             grid-template-columns: 1fr;
         }
 
-        .inside-block__main-text {
+        .introduction-block {
             width: 100%;
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
         }
 
-        .inside-block__main-text__container {
+        .text-container {
             margin-right: 50px;
         }
     }
