@@ -21,7 +21,6 @@ body {
 
 .header {
     animation: transLeft 3s;
-    margin-top: 20px;
 }
 
 @media (min-width: 1024px) and (max-width: 1500px) {
@@ -34,6 +33,7 @@ body {
 .header__text-1 {
     font-family: 'Amatic SC', sans-serif;
     margin-left: 20px;
+    margin-top: 20px;
     font-size: calc(1rem + 1vw);
 }
 
@@ -48,7 +48,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 200px;
 }
 
 @media (min-width: 1024px) {
@@ -113,7 +112,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -147,6 +145,7 @@ body {
 .eric__img {
     width: 100%;
     margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 .summary {
@@ -172,14 +171,13 @@ body {
     font-size: calc(1.5rem + 1vw);
     margin-bottom: 30px;
     font-family: 'Amatic SC', sans-serif;
+    margin-top: 200px;
 }
 
 .list-container {
     display: flex;
     width: 100%;
-    margin: 0 0;
     justify-content: space-between;
-    padding: 0;
 }
 
 @supports (display: grid) {
@@ -200,10 +198,14 @@ body {
     }
 }
 
+.content__container {
+    margin: 0 0;
+    padding: 0;
+}
+
 
 .content {
     width: 100%;
-    padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -230,6 +232,7 @@ body {
 
 .summary__content {
     margin-bottom: 100px;
+    padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -245,13 +248,6 @@ body {
     }
 }
 
-
-.list-content {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 @media (max-width: 1000px) {
     .list-content__item, .list-content__item--bold {
         font-size: calc(0.3rem + 1.5vw);
@@ -259,11 +255,20 @@ body {
     }
 }
 
+
+.list-content {
+    list-style: none;
+}
+
+.content__list {
+    margin: 0;
+    padding: 0;
+}
+
 .inside {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -291,10 +296,48 @@ body {
     font-family: 'Amatic SC', sans-serif;
 }
 
+.description {
+    display: flex;
+    max-width: 650px;
+    width: 100%;
+}
+
+@media(min-width: 1024px) {
+    .description {
+        justify-content: flex-end;}
+}
+@supports (display: grid) {
+    @media (min-width: 350px) and (max-width: 1024px) {
+        .description {
+            display: grid;
+        }
+    }
+    @media (min-width: 1024px) {
+        .description {
+            display: grid;
+            justify-content: end;
+            max-width: 650px;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.inside__description {
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+
+@supports (display: grid) {
+    @media (min-width: 1024px) {
+        .inside__description {
+            margin-right: 0;
+        }
+    }
+}
+
 .second-container {
     display: flex;
     width: 100%;
-    margin: 0 0;
     justify-content: space-between;
 }
 
@@ -321,33 +364,8 @@ body {
     }
 }
 
-.description {
-    display: flex;
-    margin-bottom: 50px;
-    margin-right: 40px;
-    max-width: 650px;
-    width: 100%;
-}
-
-@media(min-width: 1024px) {
-    .description {
-        justify-content: flex-end;}
-}
-@supports (display: grid) {
-    @media (min-width: 350px) and (max-width: 1024px) {
-        .description {
-            display: grid;
-        }
-    }
-    @media (min-width: 1024px) {
-        .description {
-            display: grid;
-            justify-content: end;
-            margin-right: 0;
-            max-width: 650px;
-            grid-template-columns: 1fr;
-        }
-    }
+.inside__container {
+    margin: 0 0;
 }
 
 @supports (display: grid) {
@@ -364,16 +382,10 @@ body {
     }
 
 
-.list-content {
-    list-style: none;
-    margin: 0;
-}
-
 .introduction {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 @supports (display: grid) {
@@ -390,11 +402,20 @@ body {
     }
 }
 
+.inside__introduction {
+    margin-bottom: 20px;
+}
+
 
 @media (min-width: 1024px) {
     .text-container {
         max-width: 750px;
         min-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .inside__text-container {
         margin-right: 40px;
     }
 }
